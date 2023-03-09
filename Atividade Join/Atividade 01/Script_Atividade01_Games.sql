@@ -44,6 +44,7 @@ values ("Ragnar", 100, 50, 99, 2000, 2000, 1),
 
 SELECT * FROM tb_personagens WHERE poderAtaque > 2000; -- Poder de ataque maior que 2000
 SELECT * FROM tb_personagens WHERE poderDefesa BETWEEN 1000 AND 2000; -- Poder de defesa entre 1000 e 2000
+SELECT * FROM tb_personagens WHERE poderDefesa >= 1000 AND poderDefesa <= 2000;
 SELECT * FROM tb_personagens WHERE nomePersonagem LIKE '%c%'; -- Procura nomes que possuam C em qualquer posição
 
 SELECT nomePersonagem, QtdVida, QtdMana, nivel, poderAtaque, poderDefesa, descricaoClasse, poderClasse from tb_personagens 
